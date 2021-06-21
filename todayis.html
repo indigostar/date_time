@@ -1,0 +1,47 @@
+<html> 
+  
+  <head>
+    <title>Today is</title>
+  </head>
+  
+<body>
+  
+<script>
+
+  var month = new Array(12);
+    month[0] = "Jan";
+    month[1] = "Feb";
+    month[2] = "Mar";
+    month[3] = "Apr";
+    month[4] = "May";
+    month[5] = "Jun";
+    month[6] = "Jul";
+    month[7] = "Aug";
+    month[8] = "Sep";
+    month[9] = "Oct";
+    month[10] = "Nov";
+    month[11] = "Dec";
+
+  var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    
+  var today = new Date();
+  var hrs = today.getHours();
+  var dayOfWeek = weekday[today.getDay()];
+
+var current_date = new Date();
+month_value = current_date.getMonth();
+day_value = current_date.getDate();
+year_value = current_date.getFullYear();
+
+document.write(month[month_value] + " " + day_value + ", " + year_value);
+
+</script>
+</body>
+</html>    
